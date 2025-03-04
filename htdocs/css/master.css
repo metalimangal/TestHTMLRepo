@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif; /* Please feel free to change the font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); /* Feel free to add a different kind of background here*/
+  }
+
+/* Feel free to make changes in all the properties here */
+
+  #calculator {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 320px;
+  }
+
+  #display {
+    background: #f3f3f3;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 2rem;
+    text-align: right;
+    margin-bottom: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  #operationText{
+    text-align: left;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+ .button {
+    background: #4CAF50;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.5s;
+  }
+
+ .button:hover {
+    background: #45a049;
+  }
+
+ .button.operator {
+    background: #FF5722;
+  }
+
+  .button.operator:hover {
+    background: #e64a19;
+  }
+
+  .button.clear {
+    background: #f44336;
+  }
+
+  .button.clear:hover {
+    background: #d32f2f;
+  }
+
+  .button.equal {
+    background: #2196F3;
+  }
+
+  .button.equal:hover {
+    background: #1976d2;
+  } 
