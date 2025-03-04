@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Calculator</title>
+  <link rel="stylesheet" href="css/master.css"/>
+</head>
+<body>
+  <!-- We have defined a div here called calculator for the calculator -->
+  <div id="calculator">
+
+    <!-- The display section where the calculated value or input is shown -->
+    <div id="display"><div id="operationText">=</div><div id="displayText">0</div></div>
+
+    <!-- The buttons section contains all the calculator's input buttons -->
+    <div class="buttons">
+
+      <!-- First row of buttons (7, 8, 9, and division operator) -->
+      <button class="button" onclick="appendNumber('7')">7</button>
+      <button class="button" onclick="appendNumber('8')">8</button>
+      <button class="button" onclick="appendNumber('9')">9</button>
+      <button class="button operator" onclick="chooseOperator('/')">&divide;</button>
+
+      <!-- Second row of buttons (4, 5, 6, and multiplication operator) -->
+      <button class="button" onclick="appendNumber('4')">4</button>
+      <button class="button" onclick="appendNumber('5')">5</button>
+      <button class="button" onclick="appendNumber('6')">6</button>
+      <button class="button operator" onclick="chooseOperator('*')">&times;</button>
+
+      <!-- Third row of buttons (1, 2, 3, and subtraction operator) -->
+      <button class="button" onclick="appendNumber('1')">1</button>
+      <button class="button" onclick="appendNumber('2')">2</button>
+      <button class="button" onclick="appendNumber('3')">3</button>
+      <button class="button operator" onclick="chooseOperator('-')">&minus;</button>
+
+      <!-- Fourth row of buttons (0, clear button, equals button, and addition operator) -->
+      <button class="button" onclick="appendNumber('0')">0</button>
+      <button class="button clear" onclick="clearDisplay()">C</button>
+      <button class="button equal" onclick="computeResult()">=</button>
+      <button class="button operator" onclick="chooseOperator('+')">+</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
